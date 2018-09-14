@@ -1,6 +1,16 @@
 # -*- coding: utf-8 -*-
 __metaclass__=type
+'''
+after run mummer,get the result xxx.mum,then split to forward and reverse
+forward
+query:Cxxxx
+database:picr_xxx:aaa bbb ccc   ==> database:aaa~aaa+ccc,query:bbb~bbb+ccc
 
+reverse
+query:Cxxxx Reverse
+database:picr_xxx:aaa bbb ccc   ==> database:aaa-ccc~aaa,query:bbb-ccc~bbb
+
+'''
 # split mum to forward and reverse
 out_forward = "x"
 out_reverse = "y"
