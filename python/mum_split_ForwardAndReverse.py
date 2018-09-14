@@ -8,7 +8,8 @@ database:picr_xxx:aaa bbb ccc   ==> database:aaa~aaa+ccc,query:bbb~bbb+ccc
 
 reverse
 query:Cxxxx Reverse
-database:picr_xxx:aaa bbb ccc   ==> database:aaa-ccc~aaa,query:bbb-ccc~bbb
+database:picr_xxx:aaa bbb ccc   ==> database:aaa+ccc~aaa,query:bbb-ccc~bbb
+                                ==> database:aaa~aaa+ccc,query:bbb-ccc~bbb
 
 '''
 # split mum to forward and reverse
